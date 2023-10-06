@@ -20,7 +20,7 @@ export class Comissionado extends Empregado {
     public setTaxaComissao(_taxaComissao: number): void {
         this.taxaComissao = _taxaComissao;
     }
-    public getTaxaComissao() {
+    public getTaxaComissao(): number {
         return this.taxaComissao;
     }
 

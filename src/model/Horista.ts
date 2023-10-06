@@ -20,7 +20,7 @@ export class Horista extends Empregado {
     public setHorasTrabalhadas(_horasTrabalhadas: number): void {
         this.horasTrabalhadas = _horasTrabalhadas;
     }
-    public getHorasTrabalhadas() {
+    public getHorasTrabalhadas(): number {
         return this.horasTrabalhadas;
     }
 

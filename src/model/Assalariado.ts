@@ -1,6 +1,5 @@
 import { Empregado } from "./Empregado";
 
-
 export class Assalariado extends Empregado{
     private salario: number;
 

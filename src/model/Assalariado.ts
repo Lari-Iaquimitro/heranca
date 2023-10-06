@@ -12,6 +12,7 @@ export class Assalariado extends Empregado{
     public setSalario(_salario: number): void {
         this.salario = _salario;
     }
+    
     public getSalario(): number {
         return this.salario;
     }

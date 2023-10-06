@@ -1,30 +1,30 @@
 import { Empregado } from "./Empregado";
 
-export class Comissionado extends Empregado{
+export class Comissionado extends Empregado {
 
-    private totalVendas: string;
+    private totalVendas: number;
     private taxaComissao: number;
 
-    public constructor(_nome: string, _cpf: string, _totalVendas: string, _taxaComissao: number){
+    public constructor(_nome: string, _cpf: string, _totalVendas: number, _taxaComissao: number) {
         super(_nome, _cpf);
         this.totalVendas = _totalVendas;
         this.taxaComissao = _taxaComissao;
     }
 
-    public setTotalVendas(_totalVendas: string): void{
+    public setTotalVendas(_totalVendas: number): void {
         this.totalVendas = _totalVendas;
     }
-    public getTotalVendas(): string{
-       return this.totalVendas;
+    public getTotalVendas(): number {
+        return this.totalVendas;
     }
-    public setTaxaComissao(_taxaComissao: number): void{
+    public setTaxaComissao(_taxaComissao: number): void {
         this.taxaComissao = _taxaComissao;
     }
-    public getTaxaComissao(){
+    public getTaxaComissao() {
         return this.taxaComissao;
     }
-    
+
     public vencimento(): number {
-        return this.;
+        return this.totalVendas = (this.totalVendas * this.taxaComissao);
     }
 }
